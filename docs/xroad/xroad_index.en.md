@@ -2,7 +2,7 @@ This solution enables you to send the VAT declaration electronically to the Esto
 
 Managers of companies and institutions registered in the Estonian Business Register can join X-Road via X-Road Self-Service Portal: [X-tee iseteenindus]
 
-To use this functionality in Business Central, the service must be enabled by the Tax and Customs Board. More information: [\[X-tee services \| Estonian Tax and Customs Board\]](https://www.emta.ee/en/business-client/e-services-training-courses/how-use-e-services/x-tee-services)
+To use this functionality in Business Central, the service must be enabled by the Tax and Customs Board. More information: [X-tee services | Estonian Tax and Customs Board]
 
 # Sending the VAT Report to the Tax and Customs Board via the X-Road Interface
 
@@ -55,7 +55,7 @@ You can view both Request Messages and Response Messages by clicking Yes in the 
 You can also manually request responses from the Tax and Customs Board by clicking **Ask response** on the XRoad Message Status Log page. The comment "No pending messages found" means that all response messages from the Tax and Customs Board have been received.
 
   [X-tee iseteenindus]: https://x-tee.ee/en/home
-  [X-tee services \| Estonian Tax and Customs Board]: https://www.emta.ee/en/business-client/e-services-training-courses/how-use-e-services/x-tee-services
+  [X-tee services | Estonian Tax and Customs Board]: https://www.emta.ee/en/business-client/e-services-training-courses/how-use-e-services/x-tee-services
   [1]: ./media/image1eng.png
   [2]: ./media/image2eng.png
   [3]: ./media/image3eng.png
