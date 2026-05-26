@@ -1,31 +1,40 @@
-site_name: OIXIO Digital Business Central Applications Documentation
+site_name: ""
 theme:
   name: material
   logo: assets/oixio_Digital_logo.png
+  favicon: assets/oixio_Digital_logo.png
   features:
-    # - navigation.tabs
     - navigation.sections
-    - toc.integrate
+    - navigation.indexes
+    - navigation.expand
     - navigation.top
+    - navigation.footer
+    - navigation.path
+    - toc.integrate
+    - toc.follow
     - search.suggest
     - search.highlight
+    - search.share
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  # language: et
+    - content.tooltips
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-night
         name: Switch to dark mode
-      primary: orange
-      accent: purple
+      primary: custom
+      accent: custom
     - scheme: slate
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-sunny
         name: Switch to light mode
-      primary: orange
-      accent: lime
+      primary: custom
+      accent: custom
+
+extra_css:
+  - assets/extra.css
 
 plugins:
   - search
@@ -36,10 +45,10 @@ plugins:
         et: Eesti keel
       translate_nav:
         en:
-          extensions: "Extensions"
-          bank_link: "Baltic Bank Connect"
-          Doc_links: "DocLink Manager"
           home: "Home"
+          bank_link: "Baltic Bank Connect"
+          Lursoft: "Lursoft"
+          Doc_links: "DocLink Manager"
           ItemRef: "Smart Item Codes"
           JobQueue: "Failed Queue Notifier"
           EE: "Reference Manager"
@@ -51,9 +60,9 @@ plugins:
           XRoad: "XRoad"
           DigiSign: "DigiSign"
         et:
-          extensions: "Laiendused"
-          bank_link: "Baltic Bank Connect"
           home: "Pealeht"
+          bank_link: "Baltic Bank Connect"
+          Lursoft: "Lursoft"
           Doc_links: "DocLink Manager"
           ItemRef: "Smart Item Codes"
           JobQueue: "Failed Queue Notifier"
@@ -64,6 +73,7 @@ plugins:
           Base: "CentralPlus"
           Attributes: "Advanced Item Attributes"
           XRoad: "XRoad"
+          DigiSign: "DigiSign"
 
 extra:
   alternate:
@@ -90,6 +100,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 copyright: |
   &copy; 2025 <a href="https://oixio.eu/digital/"  target="_blank" rel="noopener">OIXIO Digital AS</a>
