@@ -106,7 +106,7 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 copyright: |
-  &copy; 2025 <a href="https://oixio.eu/digital/"  target="_blank" rel="noopener">OIXIO Digital AS</a>
+  &copy; 2026 <a href="https://oixio.eu/digital/"  target="_blank" rel="noopener">OIXIO Digital AS</a>
 
 nav:
   - bank_link: banklink/banklink_index.et.md
