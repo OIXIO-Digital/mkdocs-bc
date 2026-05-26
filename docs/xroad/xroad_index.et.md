@@ -63,7 +63,7 @@ MTA-st vastuste päringu saab käivitada ka käsitsi klikkides lehel XTee sõnum
 
 ### X-tee seadistused
 
-Seadistused tehakse lehel XTee seadistus. Deklaratsioonide edastamisega seotud seadistused tehakse paanil "Üldine". TSD'ga seotud lisaseadistused on paanil "TSD": 
+Seadistused tehakse lehel XTee seadistus. Deklaratsioonide edastamisega seotud seadistused tehakse paanil "Üldine". TSD'ga seotud lisaseadistused on paanil "TSD":  
 
 ![][6]
 
