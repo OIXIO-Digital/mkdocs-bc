@@ -1,0 +1,543 @@
+/* ============================================================= 
+   OIXIO Digital — Brand-accurate MkDocs theme
+   Source: brand.oixio.eu
+
+   Color rules (brand book):
+     Signature orange #FF6400 = 5-30% of any view
+     Primary surface = OIXIO Light (#E3E6EB) or white
+     OIXIO Dark (#2E3844) = emphasis: header, footer, hero only
+   ============================================================= */
+
+/* Google Fonts – Poppins (brand-approved free web alternative) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ── Custom Properties ───────────────────────────────────────── */
+:root {
+  --od-orange:      #FF6400;
+  --od-orange-mid:  #FF9957;
+  --od-orange-pale: #FFCCAB;
+  --od-dark:        #2E3844;
+  --od-dark-mid:    #757C84;
+  --od-dark-pale:   #BABDC1;
+  --od-light:       #E3E6EB;
+  --od-light-mid:   #EDEFF2;
+  --od-light-pale:  #F6F7F8;
+
+  /* Material vars: dark primary = dark header */
+  --md-primary-fg-color:              #2E3844;
+  --md-primary-fg-color--light:       #3d4f62;
+  --md-primary-fg-color--dark:        #1e2730;
+  --md-primary-bg-color:              #ffffff;
+  --md-accent-fg-color:               #FF6400;
+  --md-accent-fg-color--transparent:  rgba(255, 100, 0, 0.08);
+  --md-default-bg-color:              #ffffff;
+
+  --md-text-font: "Poppins", system-ui, sans-serif;
+  --md-code-font: "Roboto Mono", "Courier New", monospace;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:         #2E3844;
+  --md-default-bg-color:         #1a2330;
+  --md-default-bg-color--light:  #1e2a38;
+  --md-default-fg-color:         #e8eaed;
+  --md-default-fg-color--light:  rgba(232, 234, 237, 0.65);
+  --md-default-fg-color--lighter: rgba(232, 234, 237, 0.35);
+  --od-light:                    rgba(255,255,255,0.06);
+  --od-light-mid:                rgba(255,255,255,0.04);
+  --od-light-pale:               rgba(255,255,255,0.02);
+  --od-dark:                     #1a2330;
+  --od-dark-mid:                 rgba(232, 234, 237, 0.55);
+}
+
+/* ── Typography ──────────────────────────────────────────────── */
+body, .md-typeset {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+  color: #2E3844;
+  margin-bottom: 0.4em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  color: #2E3844;
+  border-bottom: 2px solid #E3E6EB;
+  padding-bottom: 0.3em;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2E3844;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: #e8eaed;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+.md-header {
+  background-color: #2E3844 !important;
+  border-top: 4px solid #FF6400;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+}
+
+/* Logo: invert to white on dark header */
+.md-header__button.md-logo img {
+  height: 26px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
+}
+
+.md-header__title {
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
+}
+
+.md-search__form {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 6px;
+}
+
+.md-search__form:hover,
+.md-search__form:focus-within {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.md-search__input::placeholder {
+  color: rgba(255,255,255,0.42);
+}
+
+/* ── Navigation tabs ─────────────────────────────────────────── */
+.md-tabs {
+  background-color: #2E3844 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.md-tabs__link {
+  color: rgba(255,255,255,0.58) !important;
+  font-size: 0.81rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  opacity: 1;
+  transition: color 0.13s;
+}
+
+.md-tabs__link:hover {
+  color: rgba(255,255,255,0.88) !important;
+}
+
+.md-tabs__link--active {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.md-tabs__link--active::after {
+  background-color: #FF6400 !important;
+  height: 2px;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────────── */
+[data-md-color-scheme="slate"] .md-sidebar--primary {
+  background-color: #1a2330;
+  border-right-color: rgba(255,255,255,0.06);
+}
+
+/* ── Sidebar branded header ──────────────────────────────────── */
+.oixio-sidebar-header {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #E3E6EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oixio-sidebar-header__link {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #2E3844 !important;
+  text-decoration: none !important;
+  letter-spacing: 0.02em;
+}
+
+.oixio-sidebar-header__link:hover {
+  color: #FF6400 !important;
+  text-decoration: none !important;
+}
+
+[data-md-color-scheme="slate"] .oixio-sidebar-header {
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+
+[data-md-color-scheme="slate"] .oixio-sidebar-header__link {
+  color: #e8eaed !important;
+}
+
+[data-md-color-scheme="slate"] .oixio-sidebar-header__link:hover {
+  color: #FF6400 !important;
+}
+
+.md-nav__link {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #757C84 !important;
+  transition: color 0.12s;
+}
+
+.md-nav__link:hover {
+  color: #FF6400 !important;
+}
+
+.md-nav__link--active {
+  color: #FF6400 !important;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link {
+  color: rgba(232,234,237,0.52) !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover,
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #FF6400 !important;
+}
+
+.md-nav__item--section > .md-nav__link {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #BABDC1 !important;
+  padding-top: 0.9rem;
+}
+
+/* ── TOC ─────────────────────────────────────────────────────── */
+.md-nav--secondary .md-nav__link {
+  font-size: 0.79rem;
+  color: #757C84 !important;
+}
+
+.md-nav--secondary .md-nav__link:hover,
+.md-nav--secondary .md-nav__link--active {
+  color: #FF6400 !important;
+}
+
+/* ── Links ───────────────────────────────────────────────────── */
+.md-typeset a {
+  color: #FF6400;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.12s;
+}
+
+.md-typeset a:hover {
+  color: #cc5000;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+.md-typeset .md-button {
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  transition: background-color 0.14s, box-shadow 0.14s, transform 0.1s;
+}
+
+.md-typeset .md-button--primary {
+  background-color: #FF6400;
+  border-color: #FF6400;
+  color: #ffffff !important;
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: #cc5000;
+  border-color: #cc5000;
+  box-shadow: 0 3px 10px rgba(255,100,0,0.22);
+  transform: translateY(-1px);
+}
+
+/* ── Hero (home page – OIXIO Dark emphasis surface) ──────────── */
+.oixio-hero {
+  background-color: #2E3844;
+  color: #ffffff;
+  padding: 3rem 2.5rem 2.8rem;
+  margin: -0.8rem -1.6rem 2.5rem -1.6rem;
+  border-left: 6px solid #FF6400;
+}
+
+.oixio-hero h1 {
+  color: #ffffff !important;
+  font-size: 1.9rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin: 0 0 0.7rem 0 !important;
+  border: none !important;
+}
+
+.oixio-hero p {
+  color: rgba(227,230,235,0.76);
+  font-size: 0.93rem;
+  margin: 0 0 1.6rem 0;
+  max-width: 550px;
+  line-height: 1.7;
+}
+
+.oixio-hero strong {
+  color: #FF6400;
+  font-weight: 600;
+}
+
+/* Hero CTA button */
+.oixio-hero .md-button {
+  background-color: #FF6400 !important;
+  border-color: #FF6400 !important;
+  color: #ffffff !important;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+}
+
+.oixio-hero .md-button:hover {
+  background-color: #cc5000 !important;
+  border-color: #cc5000 !important;
+  box-shadow: 0 3px 12px rgba(255,100,0,0.28);
+  transform: translateY(-1px);
+}
+
+/* ── Card section wrapper ────────────────────────────────────── */
+
+.oixio-cards-section {
+  background-color: #F6F7F8;
+  margin: 0 -1.6rem;
+  padding: 2rem 1.6rem 2.5rem;
+}
+
+[data-md-color-scheme="slate"] .oixio-cards-section {
+  background-color: rgba(255,255,255,0.015);
+}
+
+.oixio-cards-section > h2 {
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  color: #BABDC1 !important;
+  border: none !important;
+  margin-bottom: 1.2rem !important;
+  padding-bottom: 0 !important;
+}
+
+[data-md-color-scheme="slate"] .oixio-cards-section > h2 {
+  color: rgba(232,234,237,0.4) !important;
+}
+
+/* ── Grid Cards ──────────────────────────────────────────────── */
+.md-typeset .grid.cards > :is(ul, ol) > li,
+.md-typeset .grid.cards > :not(ol, ul) {
+  background-color: #ffffff;
+  border: 1.5px solid #E3E6EB;
+  border-radius: 8px;
+  padding: 1.15rem 1.25rem;
+  transition: border-color 0.15s, box-shadow 0.16s, transform 0.12s;
+  box-shadow: 0 1px 3px rgba(46,56,68,0.06);
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li:hover,
+.md-typeset .grid.cards > :not(ol, ul):hover {
+  border-color: #FF6400;
+  box-shadow: 0 4px 14px rgba(46,56,68,0.1);
+  transform: translateY(-2px);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > :is(ul, ol) > li,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > :not(ol, ul) {
+  background-color: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.07);
+  box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > :is(ul, ol) > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > :not(ol, ul):hover {
+  border-color: #FF6400;
+  background-color: rgba(255,100,0,0.04);
+}
+
+/* Card icons */
+.md-typeset .grid.cards .lg.middle {
+  color: #FF6400 !important;
+}
+
+/* Card title */
+.md-typeset .grid.cards strong {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #2E3844;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards strong {
+  color: #e8eaed;
+}
+
+/* Card body text */
+.md-typeset .grid.cards p {
+  font-size: 0.81rem;
+  line-height: 1.6;
+  color: #757C84;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards p {
+  color: rgba(232,234,237,0.58);
+}
+
+/* Card link */
+.md-typeset .grid.cards a {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #FF6400;
+}
+
+/* ── Admonitions ─────────────────────────────────────────────── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 6px;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-weight: 600;
+  font-size: 0.84rem;
+}
+
+/* ── Code ────────────────────────────────────────────────────── */
+.md-typeset code {
+  background-color: #F6F7F8;
+  color: #2E3844;
+  border: 1px solid #E3E6EB;
+  border-radius: 4px;
+  padding: 0.08em 0.38em;
+  font-size: 0.85em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: rgba(255,255,255,0.06);
+  color: #FF9957;
+  border-color: rgba(255,255,255,0.08);
+}
+
+.md-typeset pre > code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* ── Tables ──────────────────────────────────────────────────── */
+.md-typeset table:not([class]) {
+  font-size: 0.84rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #2E3844;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid #E3E6EB;
+  color: #2E3844;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-bottom-color: rgba(255,255,255,0.07);
+  color: rgba(232,234,237,0.85);
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background-color: rgba(255,100,0,0.03);
+}
+
+/* ── Footer ──────────────────────────────────────────────────── */
+.md-footer {
+  background-color: #2E3844;
+}
+
+.md-footer-meta {
+  background-color: #1e2730;
+}
+
+.md-footer-nav__link:hover .md-footer__title {
+  color: #FF6400;
+}
+
+.md-footer-meta .md-footer-copyright a {
+  color: #FF9957;
+  font-weight: 500;
+}
+
+/* ── Misc ────────────────────────────────────────────────────── */
+.md-typeset hr {
+  border-top: 1.5px solid #E3E6EB;
+  margin: 1.8rem 0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset hr {
+  border-top-color: rgba(255,255,255,0.08);
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #F6F7F8; }
+::-webkit-scrollbar-thumb { background-color: #BABDC1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background-color: #FF6400; }
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media screen and (max-width: 76.1875em) {
+  .oixio-hero {
+    margin: -0.8rem -0.8rem 2rem -0.8rem;
+    padding: 2.2rem 1.5rem 2rem;
+  }
+  .oixio-hero h1 { font-size: 1.55rem !important; }
+  .oixio-cards-section {
+    margin: 0 -0.8rem;
+    padding: 1.8rem 0.8rem 2rem;
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .oixio-hero {
+    padding: 1.8rem 1rem 1.6rem;
+    border-left-width: 4px;
+  }
+  .oixio-hero h1 { font-size: 1.3rem !important; }
+  .oixio-hero p  { font-size: 0.87rem; }
+}
+
+/* ── Hide auto-generated title + language list on home pages ─── */
+.md-content__inner:has(> .oixio-cards-section) > h1,
+.md-content__inner:has(> .oixio-cards-section) > ul {
+  display: none !important;
+}
+
