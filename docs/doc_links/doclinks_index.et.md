@@ -1,3 +1,7 @@
+# **DocLink Manager** 
+
+# **(**DOKUMENTIDE LINGID)
+
 Loodud lahendus täiendab olemasolevat linkide lisamise võimalust dokumentidele. Juurde on lisatud linkide lisamise võimalus järgnevatele dokumentidele ja loenditele:
 
 - Ostutellimus
@@ -40,42 +44,53 @@ Loodud lahendus täiendab olemasolevat linkide lisamise võimalust dokumentidele
 
 - Lõpetatud tootmistellimus
 
-## Kasutajaõigused
+### Kasutajaõigused
 
-Kasutajale, kellel on piiratud õigused (mitte SUPER), peab määrama kasutaja õiguste komplekt CPC-DL DOCLINKMGR.
+Piiratud kasutajaõigustega (mitte SUPER) kasutajale vaja määrata kasutaja õiguste komplekt CPC-DL DOCLINKMGR.
+
+## Seadistused
+
+Ostude ja ostuv. seadistuses:
+
+Kopeeri märkused tellimuselt arvele
+
+Kopeeri tagastuskorralduse komment. kreeditarvele
+
+Seadistuste välja lülitamisel liigub ostutellimusele lisatud link konteeritud ostuarvele ja tagastuskorraldusele lisatud link konteeritud ostu kreeditarvele.
 
 ## Kasutamine
 
 Dokumendi loendis või dokumendil olles ava kiirinfo (factbox) paan
 
-![][1]
+![]
 
 Avaneval paanil vajuta Lingid järel olevale pluss märgile
 
-![][2]
+![][1]
 
 Avaneval lehel täida lingi aadress ning vajadusel kirjeldus. Kirjeldus väli täidetakse vaikimisi lingi aadress väljaga
 
-![][3]
+![][2]
 
-![][4]
+![][3]
 
 OK nupu vajutamise järel kuvatakse lisatud link dokumendi ja dokumendi loendis kiirinfo paanil
 
-![][5]
+![][4]
 
-![][6]
+![][5]
 
 Lingi avamiseks kliki kirjeldus välja tekstile.
 
 Lisatud linke saab redigeerida ja kustutada kasutades kolmepunktinupu alt vastavat valikut
 
-![][7]
+![][6]
 
-  [1]: ./media/image1.png
-  [2]: ./media/image2.png
-  [3]: ./media/image3.png
-  [4]: ./media/image4.png
-  [5]: ./media/image5.png
-  [6]: ./media/image6.png
-  [7]: ./media/image7.png
+  []: ./media/et/image1.png
+  [1]: ./media/et/image2.png
+  [2]: ./media/et/image3.png
+  [3]: ./media/et/image4.png
+  [4]: ./media/et/image5.png
+  [5]: ./media/et/image6.png
+  [6]: ./media/et/image7.png
+

@@ -1,10 +1,10 @@
-Sõltub Eesti pangaformaadid lokalisatsioonist.
+Sõltuvus Eesti pangaformaadid lokalisatsioonist.
 
 Laiendus sisaldab hankija viitenumbri kohustuslikkuse seadistust ja kliendi viitenumbrite arvutamist.
 
 ## Kasutajaõigused
 
-Piiratud õigustega (mitte SUPER) kasutajale vajalik määrata kasutaja õiguste komplekt OIX-EE SUNOEE.
+Piiratud õigustega (mitte SUPER) kasutajale vajalik määrata kasutaja õiguste komplekt CPC-EE REFERENCEMGR.
 
 ## Hankijal viitenumbri kohustuslikkus
 
@@ -22,16 +22,17 @@ Eesti pangaformaadid lokalisatsiooni arendusega saab seadistada uutele loodavate
 
 Kliendile viitenumbri genereerimiseks on kaks võimalust:
 
-1\. Kliendi kaardilt menüüribalt Avaleht - Arvuta viitenumber
+1.  Kliendi kaardilt menüüribalt Avaleht -- Arvuta viitenumber
+
+![]
+
+2.  Eesti pangaformaatide seadistus -- Arvuta klientidele viitenumbrid
 
 ![][2]
 
-2\. Eesti pangaformaatide seadistus - Arvuta klientidele viitenumbrid
-
-![][3]
-
 Eesti pangaformaatide seadistus saab valida kliendid, kellele vaja viitenumber luua. Tühja valiku korral arvutatakse viitenumbrid kõikidele klientidele.
 
-  [1]: ./media/image1ee.png
-  [2]: ./media/image2ee.png
-  [3]: ./media/image3ee.png
+  [1]: ./media/et/image1.png
+  []: ./media/et/image2.png
+  [2]: ./media/et/image3.png
+

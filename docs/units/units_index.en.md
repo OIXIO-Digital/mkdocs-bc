@@ -1,12 +1,10 @@
-## Setting Up Alternative Units of Measure
-
 Alternative units are units that have defined mathematical relationships between them, allowing conversion from one unit to another within the same physical quantity.
 
 To set up alternative units of measure, go to the **Inventory Setup** page. In the **Suno Units** section, specify the unit symbols between which conversion is allowed. To use this functionality, enable the following flags:
 
-- **Keep Line Base Quantity** - ensures that the quantity in the base unit of measure is maintained during unit conversion.
+- **Keep Line Base Quantity** -- ensures that the quantity in the base unit of measure is maintained during unit conversion.
 
-- **Item UOM Conversion Log** - a log that records the values used for unit conversions in item transactions.
+- **Item UOM Conversion Log** -- a log that records the values used for unit conversions in item transactions.
 
 ![][1]
 
@@ -14,7 +12,7 @@ To set up alternative units of measure, go to the **Inventory Setup** page. In t
 
 This functionality simplifies calculations between units. A new field, **Relational Quantity**, is added to the relationships between item units of measure. The value calculated in this field represents the quantity of the respective unit per one base unit.
 
-You can find this information by navigating to the item card header: **Related → Item → Units of Measure**.
+You can find this information by navigating it to the item card header: **Related → Item → Units of Measure**.
 
 ![][2]
 
@@ -28,7 +26,7 @@ Conversions between different quantity units are recorded in the **Item Unit of
 
 ![][5]
 
-## Using Alternative Units of Measure
+### Using Alternative Units of Measure
 
 Once the functionality is enabled, alternative units and their quantities are displayed on the following documents: blanket purchase order, purchase order, purchase return, blanket sales order, sales order, sales return, and transfer order lines. All referenced documents include factboxes titled **Quantities in Alternative Units**, which provide quick information on the conversion of quantities from the base unit to available alternative units.
 
@@ -36,10 +34,10 @@ Once the functionality is enabled, alternative units and their quantities are di
 
 ![][7]
 
-  [1]: ./media/image1eng.png
-  [2]: ./media/image2eng.png
-  [3]: ./media/image3eng.png
-  [4]: ./media/image4eng.png
-  [5]: ./media/image5eng.png
-  [6]: ./media/image6eng.png
-  [7]: ./media/image7eng.png
+  [1]: ./media/en/image1.png
+  [2]: ./media/en/image2.png
+  [3]: ./media/en/image3.png
+  [4]: ./media/en/image4.png
+  [5]: ./media/en/image5.png
+  [6]: ./media/en/image6.png
+  [7]: ./media/en/image7.png

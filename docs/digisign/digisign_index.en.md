@@ -1,65 +1,125 @@
-The solution enables signing of bank payments in Business Central and sending the signed payments to the bank.
+User Permissions
 
-## Setup
+For a user with limited permissions (not SUPER), assign the permission set **CRF-DS DIGISIGNALL**.
 
-To sign bank payments, it is necessary to set up default signers for the bank account.
-To do this, go to Bank Accounts, open the bank account card, and select Bank Account - **Default Payment File Signer** from the menu bar.
+Setup
+
+On the **DigiSign Setup** page, complete the following steps:
+
+- In the **Connection** section, choose **Setup \> Default Setup**. The URL fields are populated automatically.
 
 ![][1]
 
-Enter the signer's name and select the BC user.
+- In the **Certificate Information** section, enter the password and upload the certificate.
 
 ![][2]
 
-Signers do not have to be BC users.
+You can order the certificate from your contact person at OIXIO Digital.
 
-## Signing the Payment Journal
+Document Signing
 
-Open the Payment Journal, add the required payments, and select **Bank - Sign and Send to Bank** from the menu bar
+To sign a document, open the **Signing Containers** page and choose **New**.
+
+Enter the file name. In the **Signing Container Documents** section, upload the document by choosing **Upload Files**.
 
 ![][3]
 
-In the window that opens, the default signers set up for the bank account are displayed. In the Sign Payment File window, it is possible to change the signers - add or remove them.
+In the **Signing Container Signers** section, enter the Signer Name and Personal Code. If the signer exists in the **Employees** list, the fields are filled in automatically from the employee card when you enter **Employee No.**.
 
 ![][4]
 
-When you click OK, you will be asked: "Do you want to open the created signing container?"
+To sign, choose **Sign**. A new browser page, **Sign Document**, opens, where you can choose the preferred signing method and start the signing process.
 
 ![][5]
 
-Click Yes if you are the signer yourself. The Signing Container will open, where you can download the payment file, add more documents for signing if needed, change signers, and sign.
+After successful signing, the following information is shown:
 
 ![][6]
 
-In the Signing Container Documents section, you can download (Download) or view (View) the payment file. Through the Upload files menu item, you can add files for signing.
+If signing is successful, the status changes to **Signed**, and the signing date and time are shown. You can download the signed document by choosing **Download Container File**.
 
 ![][7]
 
-In the "Signing Container Signers" section, you can add (New Line) and remove signers (Delete Line) and sign (Sign).
+Possible signing statuses:
 
-Possible statuses during signing:
+- Draft -- waiting to be signed
 
-- Draft - waiting for signing
+- Signing -- signing in progress
 
-- Signing - signing in progress
+- Signed -- fully signed
 
-- Signed - signed
+Bank Payment File Signing
 
-- Rejected - signer has refused
+Setup
 
-- Skipped
+To sign bank payments, you must assign default signers to the bank account.
 
-When all signers have signed the payment file, the Container Status in the header changes to "Signed".
+To do this, open **Bank Accounts**, select the bank account card, and then choose **Bank Account \> Default Payment File Signers**.
 
 ![][8]
 
-A Signing Container with the status "Signed" can be sent to the bank using the "Send to Bank" button in the menu bar or you can set up a workflow entry that automatically sends signed payments to the bank.
+Enter the Signer Name and Personal Code. If the signer exists in the **Employees** list, the fields are filled in automatically from the employee card when you enter **Employee No.**.
 
-  [1]: ./media/image1eng.png
-  [2]: ./media/image2eng.png
-  [3]: ./media/image3eng.png
-  [4]: ./media/image4eng.png 
-  [5]: ./media/image5eng.png
-  [6]: ./media/image6eng.png
-  [7]: ./media/image7eng.png
-  [8]: ./media/image8eng.png
+![][9]
+
+The signers do not have to be Business Central users.
+
+Payment Journal Signing
+
+Open the **Payment Journal**, add the required payments, and choose **Bank \> Sign and Send to Bank**.
+
+![][10]
+
+In the window that opens, the default signers assigned to the bank account are shown. If needed, you can add or remove signers here.
+
+![][11]
+
+When you choose **OK**, you are asked: **Do you want to open the created signing container?**
+
+![][12]
+
+Choose **Yes** if you are one of the signers. This opens the **Signing Container**, where the payment file is already uploaded. In the **Signing Container Documents** section, you can view or download the payment file. By choosing **Upload Files**, you can add additional files for signing.
+
+![][13]
+
+In the **Signing Container Signers** section, you can add new lines, remove signers, and start the signing process.
+
+![][14]
+
+To sign, choose **Sign**. A new browser page, **Sign Document**, opens, where you can choose the preferred signing method and start the signing process.
+
+![][15]
+
+After successful signing, the following information is shown:
+
+![][6]
+
+When all signers have signed the payment file, the container header status changes to **Signed**.
+
+![][16]
+
+When the **Signing Container** status is **Signed**, you can send it to the bank by choosing **Send to Bank** on the action bar,
+
+![][17]
+
+or you can set up a job queue entry to send signed payments to the bank automatically.![][18]
+
+  [1]: ./media/en/image1.png
+  [2]: ./media/en/image2.png
+  [3]: ./media/en/image3.png
+  [4]: ./media/en/image4.png
+  [5]: ./media/en/image5.png
+  [6]: ./media/en/image6.png
+  [7]: ./media/en/image7.png
+  [8]: ./media/en/image8.png
+  [9]: ./media/en/image9.png
+  [10]: ./media/en/image10.png
+  [11]: ./media/en/image11.png
+  [12]: ./media/en/image12.png
+  [13]: ./media/en/image13.png
+  [14]: ./media/en/image14.png
+  [15]: ./media/en/image15.png
+  [16]: ./media/en/image16.png
+  [17]: ./media/en/image17.png
+  [18]: ./media/en/image18.png
+
