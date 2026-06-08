@@ -1,4 +1,4 @@
-## Alternatiivsete mõõtühikute seadistamine
+## Alternative Units (Alternatiivsed mõõtühikud)
 
 Alternatiivsed ühikud ehk ühikud, mille vahel on loodud kindlad matemaatilised seosed võimaldades teisendada ühe ühiku väärtust teise ühiku väärtuseks sama füüsikalise suuruse piires.
 
@@ -20,7 +20,7 @@ Viidatud info leiad liikudes **Kauba kaardi** päises **Seotud**-\> **Kaup**-\> 
 
 ![][3]
 
-Ava **Mõõtühikud** ning märgi milliste ühikutega seoses tuleb baaskoguse säilitamiseks kasutada **Suhtelise mõõtühiku kogust**. Samal lehel kirjeldatakse mõõtühikute **Ümardamise tolerant**, mis näitab ühikute vahelises teisenduses kasutatavat ümarduse reeglit. Hetkel on Business Centrali standardis rakendatud ümardamine viiendale kohale peale koma.
+Ava **Mõõtühikud** ning märgi milliste ühikutega seoses tuleb baaskoguse säilitamiseks kasutada **Suhtelise mõõtühiku kogust**. Samal lehel kirjeldatakse mõõtühikute **Ümardamise tolerants**, mis näitab ühikute vahelises teisenduses kasutatavat ümarduse reeglit. Hetkel on Business Centrali standardis rakendatud ümardamine viiendale kohale peale koma.
 
 ![][4]
 
@@ -36,10 +36,10 @@ Funktsionaalsuse kasutuselevõtuga rakendatakse alternatiivsete mõõtühikute j
 
 ![][7]
 
-  [1]: ./media/image1ee.png
-  [2]: ./media/image2ee.png
-  [3]: ./media/image3ee.png
-  [4]: ./media/image4ee.png
-  [5]: ./media/image5ee.png
-  [6]: ./media/image6ee.png
-  [7]: ./media/image7ee.png
+  [1]: ./media/et/image1.png
+  [2]: ./media/et/image2.png
+  [3]: ./media/et/image3.png
+  [4]: ./media/et/image4.png
+  [5]: ./media/et/image5.png
+  [6]: ./media/et/image6.png
+  [7]: ./media/et/image7.png
